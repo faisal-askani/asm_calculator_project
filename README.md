@@ -31,14 +31,26 @@ The project is built for **Linux** using NASM and the included `util.asm` helper
 
 ## 🚀 Compile and Run
 
+- First, clone the calculator’s repository to your local machine using Git:  
+```bash
+git clone https://github.com/faisal-askani/asm_calculator_project.git
+```
+
+- Navigate into the project directory:
+```bash
+cd asm_calculator_project
+```
+
 - Assemble calculator.asm into 64-bit object file c.o  
 ```bash
 nasm -f elf64 calculator.asm -o c.o
 ```
+
 - Link the object file into an executable named c_run
 ```bash
 ld c.o -o c_run
 ```
+
 - Run the calculator program
 ```bash         
 ./c_run
